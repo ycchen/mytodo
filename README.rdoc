@@ -26,3 +26,17 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+initial commit
+
+added ffaker, fatory-girl gems
+
+rails g scaffold author name:string phone:string
+
+run migration script:
+
+> rake db:migrate # this will create development.sqlite database file and generate authros table
+
+run migration script for test environment for Rspec
+
+> rake db:migrate RAILS_ENV=test  # this will create test.sqlite and generate authors table
